@@ -12,6 +12,7 @@ function ImageGalleryItem({
       <ImgStyled
         src={webformatURL}
         alt={tags}
+        loading='lazy'
         onClick={() => {
           onOpenModal({ id, tags, largeImageURL });
         }}
