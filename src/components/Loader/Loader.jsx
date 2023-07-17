@@ -1,18 +1,17 @@
 import React from 'react';
-import { RotatingSquare } from 'react-loader-spinner';
+import { ProgressBar } from 'react-loader-spinner';
 
 const Loader = () => {
   return (
-    <RotatingSquare
-      height="100"
-      width="100"
-      color="#4fa94d"
-      ariaLabel="rotating-square-loading"
-      strokeWidth="4"
-      wrapperStyle={{}}
-      wrapperClass=""
-      visible={true}
-    />
+    <ProgressBar
+  height="80"
+  width="80"
+  ariaLabel="progress-bar-loading"
+  wrapperStyle={{}}
+  wrapperClass="progress-bar-wrapper"
+  borderColor = '#F4442E'
+  barColor = '#51E5FF'
+/>
   );
 };
 
